@@ -7,16 +7,16 @@ public class Main {
         Player player1 = new Player();
         Player player2 = new Player();
 
-        player1.addCard(new Card("K", "♠"));
-        player1.addCard(new Card("Q", "♠"));
+        player1.addCard(new Card("8", "♠"));
+        player1.addCard(new Card("8", "♠"));
         
-        player2.addCard(new Card("K", "♠"));
-        player2.addCard(new Card("Q", "♠"));
+        player2.addCard(new Card("9", "♠"));
+        player2.addCard(new Card("9", "♣"));
         
         ArrayList<Card> communityCards = new ArrayList<>();
-        communityCards.add(new Card("7", "♦"));
+        communityCards.add(new Card("8", "♦"));
         communityCards.add(new Card("8", "♠"));
-        communityCards.add(new Card("A", "♣"));
+        communityCards.add(new Card("9", "♣"));
         
         String p1Result = player1.playHand(communityCards);
         String p2Result = player2.playHand(communityCards);

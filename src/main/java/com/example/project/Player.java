@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Player{
+public class Player {
     private ArrayList<Card> hand;
     private ArrayList<Card> allCards; //the current community cards + hand
     String[] suits = Utility.getSuits();
@@ -88,7 +88,7 @@ public class Player{
         }
     }
 
-    public ArrayList<Integer> findRankingFrequency(){
+    public ArrayList<Integer> findRankingFrequency() {
         // https://stackoverflow.com/a/3676539
         ArrayList<Integer> frequency = new ArrayList<>(List.of(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
         for (Card card : allCards) {
@@ -99,7 +99,7 @@ public class Player{
         return frequency;
     }
 
-    public ArrayList<Integer> findSuitFrequency(){
+    public ArrayList<Integer> findSuitFrequency() {
         ArrayList<Integer> frequency = new ArrayList<>(List.of(0, 0, 0, 0));
         for (Card card : allCards) {
             int index = card.getSuitIndex();
@@ -111,7 +111,7 @@ public class Player{
 
    
     @Override
-    public String toString(){
+    public String toString() {
         return hand.toString();
     }
 
