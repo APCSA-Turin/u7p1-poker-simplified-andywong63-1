@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="cards-holder community-cards">
+            <h3>Community Cards</h3>
+            <div class="cards-row center-row">
+                <div class="card-display" id="community-card-1">
+                    <img src="./assets/cards/cardBack_blue5.png" alt="A♥">
+                </div>
+                <div class="card-display" id="community-card-2">
+                    <img src="./assets/cards/cardBack_blue5.png" alt="10♠">
+                </div>
+                <div class="card-display" id="community-card-3">
+                    <img src="./assets/cards/cardBack_blue5.png" alt="3♦">
+                </div>
+            </div>
+        </div>
+
+        <div class="players">
+            <div class="cards-holder player-cards">
+                <h3>Your Cards</h3>
+                <div class="cards-row player-cards-row">
+                    <div class="card-display" id="player-card-1">
+                        <img src="./assets/cards/cardBack_blue5.png" alt="2♥">
+                    </div>
+                    <div class="card-display" id="player-card-2">
+                        <img src="./assets/cards/cardBack_blue5.png" alt="K♠">
+                    </div>
+                </div>
+                <button class="play" id="play-hand">Play Hand</button>
+                <p>Wins: <span id="player-wins">0</span></p>
+            </div>
+            <div class="cards-holder player-cards">
+                <h3>Bot's Cards</h3>
+                <div class="cards-row player-cards-row">
+                    <div class="card-display" id="bot-card-1" revealed="false">
+                        <img src="./assets/cards/cardBack_blue5.png">
+                    </div>
+                    <div class="card-display" id="bot-card-2" revealed="false">
+                        <img src="./assets/cards/cardBack_blue5.png">
+                    </div>
+                </div>
+                <p>Wins: <span id="bot-wins">0</span></p>
+            </div>
+        </div>
+        <div class="results" id="results-container" style="display: none;">
+            <p id="winner-text">Unknown Winner</p>
+            <button id="next-round">Next Round</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

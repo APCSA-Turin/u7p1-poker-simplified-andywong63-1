@@ -24,6 +24,7 @@ public class Player {
     }
 
     public String playHand(ArrayList<Card> communityCards) {
+        if (hand.size() == 0) return "Nothing";
         allCards = new ArrayList<>();
         allCards.addAll(hand);
         allCards.addAll(communityCards);
@@ -119,6 +120,7 @@ public class Player {
 
     // Find rankings
     public int findHighCard() {
+        if (hand.size() == 0) return -1;
         return hand.get(hand.size() - 1).getRankIndex();
     }
 

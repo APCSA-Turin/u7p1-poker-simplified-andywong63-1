@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-image: url("./assets/poker_background.jpg");
+    background-size: cover;
+}
+
+.board {
+    background-color: #166534;
+    width: 65%;
+    height: 85%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.cards-row.center-row {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-holder {
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1px 20px 10px;
+}
+
+.community-cards {
+    background-color: #15803d;
+    display: flex;
+    flex-direction: column;
+}
+.community-cards .card-display {
+    padding: 2px 8px;
+    width: 20%;
+}
+.community-cards .card-display > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.players {
+    margin: auto 10px;
+    display: flex;
+}
+
+.player-cards {
+    background-color: #2e9c57;
+    display: flex;
+    flex-direction: column;
+}
+.player-cards .card-display {
+    width: 20%;
+    padding: 2px 8px;
+}
+.player-cards .card-display > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+
+
+#player-wins, #bot-wins {
+    font-weight: bold;
+}
+
+
+button {
+    border: 3px solid #3C77AA;
+    border-radius: 10px;
+    background-color: #4485BF;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+button#next-round {
+    margin: auto;
+}
+
+
+.results {
+    background-color: #15803d;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0 15px;
+}
+#winner-text {
+    font-weight: bold;
+    padding-right: 10px;
+}
